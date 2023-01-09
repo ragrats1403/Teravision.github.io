@@ -2552,4 +2552,21 @@ responsive
     text-align: center;
     margin-left: 10px;
   }
+  .main-banner .left-content h2 {
+    z-index: 2;
+    position: relative;
+    font-weight: 700;
+    font-size: 70px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  .main-banner .left-content p {
+    margin-bottom: 30px;
+    margin-left: 50px;
+    text-align: center;
+  }
+  .ending-heading a {
+    text-align: center;
+    margin-bottom: 10px;
+}
 }
