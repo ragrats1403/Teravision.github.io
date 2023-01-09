@@ -2258,7 +2258,7 @@ footer .icons {
 
 .left-logo {
     float: left;
-    width: 40%;
+    width: 43%;
 
 }
 
@@ -2267,7 +2267,14 @@ footer .icons {
   font-size: 30px; 
   color:white;
 }
+.right-controller
+{
+  float: right;
+  width: 40%;
+  margin:10px;
+  
 
+}
 /* 
 ---------------------------------------------
 responsive
