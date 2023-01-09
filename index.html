@@ -40,6 +40,36 @@ https://templatemo.com/tm-568-digimedia
 <body>
 
   <!-- ***** Preloader Start ***** -->
+  <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "111838184026005");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -147,9 +177,9 @@ https://templatemo.com/tm-568-digimedia
           <div class="row">
             <div class="col-lg-6 image-margin">
               <div class="section-heading">
-              <div class="about-left-image  wow fadeInLeft " data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src ="assets/img/body-img-1.png" alt="" class="image-margin"><br>
-              </div>
+                <div class="about-left-image  wow fadeInLeft " data-wow-duration="1s" data-wow-delay="0.5s">
+                  <img src ="assets/img/body-img-1.png" alt="" class="image-margin"><br>
+                </div>
               </div>
             </div>
             <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -165,6 +195,9 @@ https://templatemo.com/tm-568-digimedia
                 <br>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
 
 
                 
@@ -328,112 +361,109 @@ https://templatemo.com/tm-568-digimedia
 
 
 <!-- Contact Us -->
-<div id="contact" class="contact-us section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3">
-        <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-          <h6>Contact Us</h6>
-          <h4>Get In Touch With Us <em>Now</em></h4>
-          <div class="line-dec"></div>
-        </div>  
-      </div>
-      <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-        <!--Changes in Form attributes please check it... Vrixen-->
-        <form id="contact" onsubmit="sendEmail(); reset(); return false;">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="contact-dec">
-                <img src="assets/images/contact-us.png" alt="">
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h6>Contact Us</h6>
+            <h4>Get In Touch With Us <em>Now</em></h4>
+            <div class="line-dec"></div>
+          </div>  
+        </div>
+        <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <!--Changes in Form attributes please check it... Vrixen-->
+          <form id="contact" onsubmit="sendEmail(); reset(); return false;">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="contact-dec">
+                  <img src="assets/images/contact-us.png" alt="">
+                </div>
               </div>
-            </div>
-            <div class="col-lg-5">
-              <div id="map">
-                <iframe src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <div class="col-lg-5">
+                <div id="map">
+                  <iframe src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="fill-form">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="info-post">
-                      <div class="icon">
-                        <img src="assets/images/phone.png" alt="">
-                        <a href="#">010-020-0340</a>
+              <div class="col-lg-7">
+                <div class="fill-form">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="info-post">
+                        <div class="icon">
+                          <img src="assets/images/phone.png" alt="">
+                          <a href="#">010-020-0340</a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="info-post">
-                      <div class="icon">
-                        <img src="assets/images/mail.png" alt="">
-                        <a href="#">hi@algofilipino.com</a>
+                    <div class="col-lg-4">
+                      <div class="info-post">
+                        <div class="icon">
+                          <img src="assets/images/mail.png" alt="">
+                          <a href="#">hi@algofilipino.com</a>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="info-post">
-                      <div class="icon">
-                        <img src="assets/images/location.png" alt="">
-                        <a href="#">Quezon City</a>
+                    <div class="col-lg-4">
+                      <div class="info-post">
+                        <div class="icon">
+                          <img src="assets/images/location.png" alt="">
+                          <a href="#">Quezon City</a>
+                        </div>
                       </div>
+                    </div> 
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                      </fieldset>
+                      <fieldset>
+                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                      </fieldset>
+                      <fieldset>
+                        <input type="subject" name="subject" id="subject" placeholder="Subject" autocomplete="on">
+                      </fieldset>
                     </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <fieldset>
-                      <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
-                    </fieldset>
-                    <fieldset>
-                      <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-                    </fieldset>
-                    <fieldset>
-                      <input type="subject" name="subject" id="subject" placeholder="Subject" autocomplete="on">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-6">
-                    <fieldset>
-                      <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <!--Changes in Button check if there are changes... Vrixen-->
-                      <button type="submit" class="main-button ">SUMALI SA ALGOFILIPINO</button>
-                    </fieldset>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <!--Changes in Button check if there are changes... Vrixen-->
+                        <button type="submit" class="main-button ">SUMALI SA ALGOFILIPINO</button>
+                      </fieldset>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<footer class = "footer" style="background-color: #333333; padding: 40px;">
+<footer class = "footer">
   <div class="left-logo">
   <img src="assets/img/algo-filipino-logo.png" class="logo"> <br>
   <p>AlgoFilipino</p>
-</div>
-  <div class="footer_content container">
+  </div>
       <div class="footer__grid">
           <div class="item">
               
                 <div class="social-media">
-            <a href="https://www.facebook.com/AlgoFilipino/"><i class="fa fa-facebook"></i></a></li>
-            <a href="https://twitter.com/algo_filipino"><i class="fa fa-twitter"></i></a></li>
-            <a href="https://www.instagram.com/algofilipino/"><i class="fa fa-instagram"></i></a></li>
-            <a href="https://www.linkedin.com/company/algofilipino/"><i class="fa fa-linkedin"></i></a></li>
+                  <a href="https://www.facebook.com/AlgoFilipino/"><i class="fa fa-facebook"></i></a></li>
+                  <a href="https://twitter.com/algo_filipino"><i class="fa fa-twitter"></i></a></li>
+                  <a href="https://www.instagram.com/algofilipino/"><i class="fa fa-instagram"></i></a></li>
+                  <a href="https://www.linkedin.com/company/algofilipino/"><i class="fa fa-linkedin"></i></a></li>
                 </div>
-          <div class="copyright">
+              <div class="copyright">
                   <p>by Algo Filipino Technologies</p>
               </div>
           </div>
-        
-          </div>
       </div>
-  </div>
 </footer>
 <!-- Scripts -->
 <script src="vendor/jquery/jquery.min.js"></script>
